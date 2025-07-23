@@ -6,122 +6,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLUB13</title>
   <style>
-    #background-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      opacity: 0.12;
-      pointer-events: none;
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #01020a;
-      color: #d4af37;
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
+    <style>
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.12;
+    pointer-events: none;
   }
-    header {
-      background: linear-gradient(145deg, #01020a, #1a1a1a);
-      padding: 3rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid #d4af3744;
-      box-shadow: 0 4px 10px #00000066;
-    }
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 0;
-      color: #d4af37;
-      letter-spacing: 2px;
-    }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #01020a;
+    color: #d4af37;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
 
-    header p {
-      font-size: 1.2rem;
-      color: #c4a83c;
-      margin-top: 0.5rem;
-    }
+  header {
+    background: linear-gradient(145deg, #01020a, #1a1a1a);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #d4af3744;
+    box-shadow: 0 4px 10px #00000066;
+  }
 
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
-    }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+    color: #d4af37;
+    letter-spacing: 2px;
+  }
 
-    .product {
-      background: linear-gradient(180deg, #111111, #1b1b1b);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 12px;
-      border: 1px solid #d4af3733;
-      box-shadow: 0 0 12px #d4af3722;
-      transition: transform 0.3s ease;
-    }
+  header p {
+    font-size: 1.2rem;
+    color: #c4a83c;
+    margin-top: 0.5rem;
+  }
 
-    .product:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 20px #d4af3744;
-    }
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem;
+  }
 
-    .product h2 {
-      font-family: 'Playfair Display', serif;
-      margin-top: 0;
-      color: #f0f0f0;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 1.5rem;
-    }
+  .product {
+    background: linear-gradient(180deg, #111111, #1b1b1b);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 1px solid #d4af3733;
+    box-shadow: 0 0 12px #d4af3722;
+    transition: transform 0.3s ease;
+  }
 
-    .product svg {
-      width: 28px;
-      height: 28px;
-      fill: #c49c48;
-      flex-shrink: 0;
-    }
+  .product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px #d4af3744;
+  }
 
-    .product ul {
-      padding-left: 1.2rem;
-    }
+  .product h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.5rem;
+  }
 
-    .product ul li {
-      margin-bottom: 0.5rem;
-    }
+  .product svg {
+    width: 28px;
+    height: 28px;
+    fill: #c49c48;
+    flex-shrink: 0;
+  }
 
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
+  .product ul {
+    padding-left: 1.2rem;
+  }
 
-    .cta a {
-      background-color: #d4af37;
-      color: #0b0b0b;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-      box-shadow: 0 0 10px #d4af3755;
-    }
+  .product ul li {
+    margin-bottom: 0.5rem;
+  }
 
-    .cta a:hover {
-      background-color: #f0f0f0;
-    }
+  .cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #a38d2c;
-      border-top: 1px solid #d4af3722;
-    }
-  </style>
+  .cta a {
+    background-color: #d4af37;
+    color: #0b0b0b;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px #d4af3755;
+  }
+
+  .cta a:hover {
+    background-color: #f0f0f0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #a38d2c;
+    border-top: 1px solid #d4af3722;
+  }
+</style>
 </head>
 <body>
 <video autoplay muted loop playsinline id="background-video">
