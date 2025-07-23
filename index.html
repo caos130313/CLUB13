@@ -1,222 +1,61 @@
-
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Club Trece | Privacidad de Lujo</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Inter:wght@300;500&amp;display=swap" rel="stylesheet"/>
-<style>
-    body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #0a0a0a;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%231c1c1c' stroke-width='0.5'%3E%3Ccircle cx='50' cy='50' r='5'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3Ccircle cx='50' cy='50' r='15'/%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3Ccircle cx='50' cy='50' r='25'/%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='50' r='35'/%3E%3Ccircle cx='50' cy='50' r='40'/%3E%3Ccircle cx='50' cy='50' r='45'/%3E%3Ccircle cx='50' cy='50' r='50'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 200px 200px;
-  color: #d4af37;
-  line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(145deg, #01020a, #1a1a1a);
-      padding: 3rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid #d4af3744;
-      box-shadow: 0 4px 10px #00000066;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLUB13</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23262626' stroke-width='0.5'%3E%3Ccircle cx='50' cy='50' r='5'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3Ccircle cx='50' cy='50' r='15'/%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3Ccircle cx='50' cy='50' r='25'/%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='50' r='35'/%3E%3Ccircle cx='50' cy='50' r='40'/%3E%3Ccircle cx='50' cy='50' r='45'/%3E%3Ccircle cx='50' cy='50' r='50'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-position: center;
       color: #d4af37;
-      letter-spacing: 2px;
     }
-    header p {
-      font-size: 1.2rem;
-      color: #c4a83c;
-      margin-top: 0.5rem;
-    }
+
     .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .product {
-      background: linear-gradient(180deg, #111111, #1b1b1b);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 12px;
-      border: 1px solid #d4af3733;
-      box-shadow: 0 0 12px #d4af3722;
-      transition: transform 0.3s ease;
-    }
-    .product:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 20px #d4af3744;
-    }
-    .product h2 {
-      font-family: 'Playfair Display', serif;
-      margin-top: 0;
-      color: #f0f0f0;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 0.6rem;
-      font-size: 1.5rem;
-    }
-    .product svg {
-      width: 28px;
-      height: 28px;
-      fill: #c49c48;
-      flex-shrink: 0;
-    }
-    .product ul {
-      padding-left: 1.2rem;
-    }
-    .product ul li {
-      margin-bottom: 0.5rem;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .cta a {
-      background-color: #d4af37;
-      color: #0b0b0b;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-      box-shadow: 0 0 10px #d4af3755;
-    }
-    .cta a:hover {
-      background-color: #f0f0f0;
-    }
-    footer {
-      text-align: center;
+      justify-content: center;
+      min-height: 100vh;
       padding: 2rem;
-      font-size: 0.9rem;
-      color: #a38d2c;
-      border-top: 1px solid #d4af3722;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-<header>
-  <img src="imagen2.PNG" alt="Banner Club Trece" style="width: 100%; height: auto; display: block; margin: 0; padding: 0;" />
-</header>
-<section class="container" style="text-align: center;">
-<h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: #c49c48;">Discreción y privacidad en tus manos.</h2>
-<p style="font-size: 1.1rem; color: #f0f0f0; margin-top: 1rem;">
-    Descubre un nuevo estándar en seguridad digital.<br/>
-    USBs de lujo con <strong>Tails OS</strong> preinstalado y almacenamiento cifrado.
-  </p>
-<p style="font-size: 1.1rem; color: #f0f0f0;">
-    Protege tu información. Navega sin dejar huella. Llévala contigo.
-  </p>
-    <!-- Imagen agregada después de la sección 3 -->
-<img src="imagen1.jpeg" alt="Privacidad Club Trece" style="max-width: 100%; height: auto; margin: 2rem auto; display: block;" />
-</section>
-<div class="container">
-<div class="product">
-<h2>
-<svg viewbox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"></path></svg>
-      USB 8 GB – Privacidad Esencial
-    </h2>
-<p style="color: #f0f0f0;">Ideal para quienes desean iniciarse en el mundo de la privacidad digital. Disfruta de una experiencia segura, rápida y discreta, sin dejar rastro alguno en el equipo utilizado. Compacta, confiable y lista para usar en cualquier momento.</p>
-<ul>
-<li>✅ Navegación anónima con Tor</li>
-<li>✅ Carpeta cifrada (~5.5 GB)</li>
-<li>✅ Tails preinstalado</li>
-<li><strong>$25 USD</strong></li>
-</ul>
-<a href="https://wa.me/573115400913?text=Hola,+quiero+adquirir+este+producto%3A+USB+8GB+Esencial" style="display: inline-block; margin-top: 1rem; padding: 10px 20px; background-color: #f5c842; color: black; border-radius: 5px; text-decoration: none; font-weight: bold;" target="_blank">
-   Solicitar ahora
-</a>
-</div>
-<div class="product">
-<h2>
-<svg viewbox="0 0 24 24"><path d="M4 4h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"></path></svg>
-      USB 16 GB – Protección Personal
-    </h2>
-<p style="color: #f0f0f0;">Una opción perfecta para quienes desean llevar sus datos protegidos a todas partes. Guarda tus contraseñas, documentos personales y proyectos sensibles en una unidad cifrada con acceso rápido y sin complicaciones. Diseñada para quienes valoran su privacidad sin sacrificar comodidad.</p>
-<ul>
-<li>✅ Navegación anónima con Tor</li>
-<li>✅ Carpeta cifrada (~13 GB)</li>
-<li>✅ Tails preinstalado</li>
-<li><strong>$40 USD</strong></li>
-</ul>
-<a href="https://wa.me/573115400913?text=Hola,+quiero+adquirir+este+producto%3A+USB+16GB+Protección+Personal" style="display: inline-block; margin-top: 1rem; padding: 10px 20px; background-color: #f5c842; color: black; border-radius: 5px; text-decoration: none; font-weight: bold;" target="_blank">
-   Solicitar ahora
-</a>
-</div>
-<div class="product">
-<h2>
-<svg viewbox="0 0 24 24"><path d="M3 4h18v2H3zm0 4h12v2H3zm0 4h18v2H3zm0 4h12v2H3zm0 4h18v2H3z"></path></svg>
-      Privacy 32 – Privacidad Profesional
-    </h2>
-<p style="color: #f0f0f0;">Privacidad sin límites para quienes viven en movimiento. Ya seas periodista, activista o profesional digital, este dispositivo te ofrece una plataforma segura y personalizable para tu trabajo diario. Conserva tus herramientas, correos y archivos protegidos donde sea que vayas.</p>
-<ul>
-<li>✅ Navegación anónima con Tor</li>
-<li>✅ Carpeta cifrada (~29 GB)</li>
-<li>✅ Tails preinstalado</li>
-<li><strong>$55 USD</strong></li>
-</ul>
-<a href="https://wa.me/573115400913?text=Hola,+quiero+adquirir+este+producto%3A+PRIVACY+32+Privacidad+Profecional" style="display: inline-block; margin-top: 1rem; padding: 10px 20px; background-color: #f5c842; color: black; border-radius: 5px; text-decoration: none; font-weight: bold;" target="_blank">
-   Solicitar ahora
-</a>
-</div>
-<div class="product">
-<h2>
-<svg viewbox="0 0 24 24"><path d="M12 4.81L3 9v6c0 4.97 3.84 9.55 9 10 5.16-.45 9-5.03 9-10V9l-9-4.19z"></path></svg>
-      Freedom 64 – Libertad sin Límites
-    </h2>
-<p style="color: #f0f0f0;">La solución definitiva para usuarios avanzados que requieren velocidad, capacidad y lujo. Accede a una estación de trabajo móvil desde cualquier PC, manteniendo todos tus datos y configuraciones intactas. Una joya tecnológica en una presentación de lujo.</p>
-<ul>
-<li>✅ Navegación anónima con Tor</li>
-<li>✅ Carpeta cifrada (~59 GB)</li>
-<li>✅ Tails preinstalado</li>
-<li><strong>$75 USD</strong></li>
-</ul>
-<a href="https://wa.me/573115400913?text=Hola,+quiero+adquirir+este+producto%3A+FREEDOM+64+Libertdad+Sin+Límites" style="display: inline-block; margin-top: 1rem; padding: 10px 20px; background-color: #f5c842; color: black; border-radius: 5px; text-decoration: none; font-weight: bold;" target="_blank">
-   Solicitar ahora
-</a>
-</div>
-<div class="product">
-<h2>
-<svg viewbox="0 0 24 24"><path d="M12 2L1 9l11 7 9-6.09V17h2V9L12 2z"></path></svg>
-      Vault 128 – Seguridad Definitiva
-    </h2>
-<p style="color: #f0f0f0;">Máxima capacidad y máxima seguridad en un solo dispositivo. Vault 128 es la elección ideal para quienes manejan información sensible a gran escala. Soporte dedicado, rendimiento superior y la confianza de Club Trece en cada detalle. No es solo una USB: es tu oficina blindada en el bolsillo.</p>
-<ul>
-<li>✅ Navegación anónima con Tor</li>
-<li>✅ Carpeta cifrada (~119 GB)</li>
-<li>✅ Tails preinstalado</li>
-<li><strong>$100 USD</strong></li>
-</ul>
-<a href="https://wa.me/573115400913?text=Hola,+quiero+adquirir+este+producto%3A+VAULT+128+Seguridad+Definitiva" style="display: inline-block; margin-top: 1rem; padding: 10px 20px; background-color: #f5c842; color: black; border-radius: 5px; text-decoration: none; font-weight: bold;" target="_blank">
-   Solicitar ahora
-</a>
-</div>
-<div class="cta">
-</div>
-</div>
-<section class="container" style="text-align: center; margin-top: 4rem;">
-<h2 style="color: #c49c48; font-family: 'Playfair Display', serif;">¿Qué incluye tu USB de Club Trece?</h2>
-<p style="color: #f0f0f0; font-size: 1.1rem; margin-top: 1rem;">
-    Cada unidad ha sido cuidadosamente preparada para ofrecerte una experiencia única, segura y profesional desde el primer uso.
-  </p>
-<ul style="list-style: none; padding: 0; margin-top: 2rem; color: #f0f0f0; font-size: 1rem;">
-<li>✅ USB de alta velocidad</li>
-<li>✅ Sistema operativo <strong>Tails OS</strong> preinstalado</li>
-<li>✅ Arranque directo en cualquier computador</li>
-<li>✅ Almacenamiento persistente cifrado <em>(según versión)</em></li>
-<li>✅ Manual de uso digital incluido</li>
-<li>✅ Soporte 24 horas</li>
-<li>✅ Presentación premium: ideal para uso profesional</li>
-</ul>
-</section><footer><p style="text-align: center; color: #f0f0f0; padding: 2rem 0; font-size: 0.95rem;">© 2025 Club Trece. Privacidad real, estilo verdadero.</p></footer>
+  <div class="container">
+    <h1>CLUB13</h1>
+    <p>Bienvenido a nuestro sitio. Este fondo usa el estilo Ripple Grid de ReactBits con un diseño responsivo y elegante.</p>
+  </div>
 </body>
 </html>
