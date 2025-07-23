@@ -7,23 +7,26 @@
 <title>Club Trece | Privacidad de Lujo</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Inter:wght@300;500&amp;display=swap" rel="stylesheet"/>
 <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #01020a; /* Color de fondo base */
-      background-image: url('fondo.jpg'); /* Cambia esto por el nombre real de tu imagen */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #d4af37;
-      line-height: 1.6;
-    }
+   body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #01020a;
+  background-image: url('fondo.jpg'); /* Cambia si está en otra carpeta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #d4af37;
+  line-height: 1.6;
+}
 
-    @media (max-width: 768px) {
-      body {
-        background-attachment: scroll; /* Mejora compatibilidad móvil */
-    }
+@media (max-width: 768px) {
+  body {
+    background-size: contain;      /* Ajusta sin recortar */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+  }
     header {
       background: linear-gradient(145deg, #01020a, #1a1a1a);
       padding: 3rem 1rem;
