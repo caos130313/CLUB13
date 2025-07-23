@@ -10,9 +10,19 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #01020a;
+      background-color: #01020a; /* Color de fondo base */
+      background-image: url('fondo.jpg'); /* Cambia esto por el nombre real de tu imagen */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #d4af37;
       line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll; /* Mejora compatibilidad móvil */
     }
     header {
       background: linear-gradient(145deg, #01020a, #1a1a1a);
