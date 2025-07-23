@@ -2,19 +2,10 @@
 
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLUB13</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #01020a;
-      color: #d4af37;
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-    }
-
     #background-video {
       position: fixed;
       top: 0;
@@ -23,10 +14,17 @@
       min-height: 100%;
       object-fit: cover;
       z-index: -1;
-      opacity: 0.12; /* Ajusta transparencia */
+      opacity: 0.12;
       pointer-events: none;
-    }
-
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #01020a;
+      color: #d4af37;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+  }
     header {
       background: linear-gradient(145deg, #01020a, #1a1a1a);
       padding: 3rem 1rem;
@@ -126,11 +124,10 @@
   </style>
 </head>
 <body>
-  <!-- Video de fondo -->
-  <video autoplay muted loop playsinline id="background-video">
-    <source src="video.mp4" type="video/mp4">
-    Tu navegador no soporta el video en HTML5.
-  </video>
+<video autoplay muted loop playsinline id="background-video">
+  <source src="video.mp4" type="video/mp4" />
+  Tu navegador no soporta video HTML5.
+</video>
 <header>
   <img src="imagen2.PNG" alt="Banner Club Trece" style="width: 100%; height: auto; display: block; margin: 0; padding: 0;" />
 </header>
