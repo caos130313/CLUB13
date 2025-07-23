@@ -11,21 +11,24 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #01020a;
-  background-image: url('fondo.jpg'); /* Asegúrate de que esta ruta sea correcta */
+  background-image: url('fondo.jpg'); /* Cambia si está en otra carpeta */
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #d4af37;
   line-height: 1.6;
 }
 
+/* Ajuste para pantallas pequeñas */
 @media (max-width: 768px) {
   body {
-    background-size: 150%; /* Ajusta esto según el zoom que desees */
+    background-size: 100% auto;  /* Ancho 100%, alto automático */
+    background-repeat: no-repeat;
     background-position: top center;
     background-attachment: scroll;
   }
+}
     header {
       background: linear-gradient(145deg, #01020a, #1a1a1a);
       padding: 3rem 1rem;
