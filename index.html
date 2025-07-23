@@ -6,6 +6,19 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Club Trece | Privacidad de Lujo</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Inter:wght@300;500&amp;display=swap" rel="stylesheet"/>
+ <style>
+    /* Estilo del video de fondo */
+    #background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.1; /* Ajusta según lo sutil que desees el efecto */
+      pointer-events: none;
+    }   
 <style>
     body {
         <video autoplay muted loop playsinline id="background-video">
@@ -102,17 +115,6 @@
       border-top: 1px solid #d4af3722;
     }
   </style>
-  #background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.1; /* Puedes ajustar la opacidad para que sea más o menos sutil */
-    pointer-events: none;
-  }
 </style>
 </head>
 <body>
